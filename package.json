@@ -1,4 +1,5 @@
 {
+  "homepage": "http://rishikeshmore5.github.io/react-netflix-ui",
   "name": "new",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +19,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/helper-compilation-targets": "^7.22.6"
+    "@babel/helper-compilation-targets": "^7.22.6",
+    "gh-pages": "^5.0.0"
   }
 }
